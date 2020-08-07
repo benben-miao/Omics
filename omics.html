@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Omics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Omics">
+    <meta name="author" content="benben-miao">
+    <!--fontawesome-->
+    <link type="text/css" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- Pixel CSS -->
+    <link type="text/css" href="./css/neumorphism.css" rel="stylesheet">
+    <link type="text/css" href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!---1.Navbar-->
+    <nav class="navbar navbar-expand navbar-transparent navbar-light shadow-soft navbar-theme-primary">
+        <div class="container position-relative">
+            <a href="./index.html">
+                <img class="logo" src="https://s1.ax1x.com/2020/07/12/U8wh9g.jpg" alt="pixel logo">
+            </a>
+            <div class="navbar-collapse collapse" id="navbar-default-primary">
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./omics.html" class="nav-link">Omics</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                            <i class="fas fa-angle-down nav-link-arrow"></i>
+                            <span class="nav-link-inner-text">BioCloud</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://usegalaxy.org/" target="_blank">Galaxy (International)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="http://210.38.139.148:8686/" target="_blank">Galaxy (GDOU Campus)</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="#"
+                                    class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                    aria-haspopup="true" aria-expanded="false">AiBio Cloud
+                                    <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="http://210.38.139.148:8888/" target="_blank" class="dropdown-item">Jupyter Lab (GDOU Campus)</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://210.38.139.148:8787/" target="_blank" class="dropdown-item">Rstudio (GDOU Campus)</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://210.38.139.148:3838/biocloud/" target="_blank"
+                                            class="dropdown-item">ShinyApps (GDOU Campus)</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://zhanglab.ccmb.med.umich.edu/" target="_blank" class="dropdown-item">Zhang Lab</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./book.html" class="nav-link">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./video.html" class="nav-link">Video</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                            <i class="fas fa-angle-down nav-link-arrow"></i>
+                            <span class="nav-link-inner-text">Dashboard</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="http://210.38.139.148:3000/" target="_blank">Prometheus/Grafana (GDOU Campus)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://210.38.139.148/zabbix/" target="_blank">Zabbix (GDOU Campus)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://210.38.139.148:8443" target="_blank">Dacker/Kubernetes/Dashboard (GDOU Campus)</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="fab fa-github"></span>
+                <a href="https://github.com/benben-miao" target="_blank" class="nav-link">Github</a>
+                <!-- Button Modal -->
+                <button type="button" class="btn btn-sm btn-block btn-primary" data-toggle="modal"
+                    data-target="#modal-notification">Notification
+                </button>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Modal Content -->
+    <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-primary">
+                <div class="modal-header">
+                    <p class="modal-title" id="modal-title-notification"><b>Introduction:</b></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="py-3 text-center">
+                        <iframe src="https://beautiful-code.netlify.app/dna-helix/dist/index.html"
+                            style="width: 100%;height: 300px;"></iframe>
+                        <h2 class="h4 my-3"><b>Open source project developed for bioinformatics and omics
+                                study.</b></h2>
+                        <p><b>DESCRIPTION:</b> Database and programs collection of bioinformatics and omics
+                            for scientific study! Open Source Tenchnology for Science!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-danger ml-auto"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal Content -->
+    <!---2.VerTabs-->
+    <div class="my-vertabs">
+        <div class="row">
+            <div class="col-xl-2">
+                <!-- Tab Nav -->
+                <ul class="nav nav-pills nav-fill flex-column vertical-tab" id="tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab-3" data-toggle="tab" href="#tab-1" role="tab"
+                            aria-controls="tab-1" aria-selected="true">Nucleic Acid (Gene)
+                            <span class="badge badge-success text-uppercase">12</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab-3" data-toggle="tab" href="#tab-2" role="tab"
+                            aria-controls="tab-2" aria-selected="false">Amino Acid (Protein)
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-3" role="tab"
+                            aria-controls="tab-3" aria-selected="false">Metabolomics
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-4" role="tab"
+                            aria-controls="tab-4" aria-selected="false">Micro RNA
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-5" role="tab"
+                            aria-controls="tab-5" aria-selected="false">Circ RNA
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-6" role="tab"
+                            aria-controls="tab-6" aria-selected="false">None-code RNA
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-7" role="tab"
+                            aria-controls="tab-7" aria-selected="false">Transcription Factors
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-8" role="tab"
+                            aria-controls="tab-8" aria-selected="false">Model Species
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-8" role="tab"
+                            aria-controls="tab-8" aria-selected="false">Journals
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-8" role="tab"
+                            aria-controls="tab-8" aria-selected="false">Omics Coding
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-3" data-toggle="tab" href="#tab-8" role="tab"
+                            aria-controls="tab-8" aria-selected="false">I Developed
+                            <span class="badge badge-success text-uppercase">10</span></a>
+                    </li>
+                </ul>
+                <!-- End of Tab Nav -->
+            </div>
+            <div class="col-xl-10 content">
+                <!-- Tab Content -->
+                <div class="card shadow-inset bg-primary border-light p-4 rounded">
+                    <div class="card-body py-0">
+                        <div class="tab-content" id="tabcontent">
+                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9aa4.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.encodeproject.org/"><b>ENCODE:
+                                                    </b>https://www.encodeproject.org/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UGArzd.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://www.plantgdb.org/"><b>PlantDB:
+                                                    </b>http://www.plantgdb.org/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9DR1.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://asia.ensembl.org/index.html"><b>HumanGenome:
+                                                    </b>http://asia.ensembl.org/index.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9yM6.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://plants.ensembl.org/index.html"><b>PlantGenome:
+                                                    </b>http://plants.ensembl.org/index.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9rxx.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://metazoa.ensembl.org/index.html"><b>MetazoaGenome:
+                                                    </b>http://metazoa.ensembl.org/index.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9BGR.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://fungi.ensembl.org/index.html"><b>FungiGenome:
+                                                    </b>http://fungi.ensembl.org/index.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9UZF.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://bacteria.ensembl.org/index.html"><b>BacteriaGenome:
+                                                    </b>http://bacteria.ensembl.org/index.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9YrT.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="http://ensembl.gramene.org/genome_browser/index.html"><b>Ensembl:
+                                                    </b>http://ensembl.gramene.org/genome_browser/index.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-6" role="tabpanel" aria-labelledby="tab-6">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-7" role="tabpanel" aria-labelledby="tab-7">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-8" role="tabpanel" aria-labelledby="tab-8">
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8y11O.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ncbi.nlm.nih.gov/ "><b>NCBI:
+                                                    </b>https://www.ncbi.nlm.nih.gov/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/U8yRNq.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ebi.ac.uk/"><b>EMBL: </b>https://www.ebi.ac.uk/
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG9tqU.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.ddbj.nig.ac.jp/index-e.html"><b>DDBJ:
+                                                    </b>https://www.ddbj.nig.ac.jp/index-e.html</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="card bg-primary border-light shadow-soft">
+                                            <img src="https://s1.ax1x.com/2020/07/12/UG90i9.png"
+                                                class="card-img-top rounded-top" alt="Themesberg office">
+                                            <div class="card-body server">
+                                                <a href="https://www.biosino.org/bigbim/index"><b>BioSino:
+                                                    </b>https://www.biosino.org/bigbim/index</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Tab Content -->
+            </div>
+        </div>
+    </div>
+    <!---3.Alert-->
+    <div class="my-alert">
+        <div class="alert alert-success alert-dismissible shadow-soft fade show" role="alert">
+            <span class="alert-inner--icon"><span class="fas fa-fire"></span></span>
+            <span class="alert-inner--text"><strong>Bioinformatics and Omcis</strong>
+                A Collection of databases and services for bioinformatics and omics! <b>(Long time supporting and
+                    updating for scientific study!)</b> </span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <!---5.Footer-->
+    <div class="my-footer shadow-soft">
+        <div class="row ">
+            <div class="col-12 col-md-4">
+                <div
+                    class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                    <span class="fas fa-copyright"></span>
+                </div> Copyright: benben-miao
+            </div>
+            <div class="col-12 col-md-4">
+                <div
+                    class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                    <span class="fab fa-github"></span>
+                </div> Github: <a href="https://github.com/benben-miao">https://github.com/benben-miao</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <div
+                    class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                    <span class="fab fa-gitlab"></span>
+                </div> Gitlab: <a href="https://gitlab.com/benben-miao">https://gitlab.com/benben-miao</a>
+            </div>
+        </div>
+        <b>DESCRIPTION:</b> Database and programs collection of bioinformatics and omics for scientific study! <b>Open
+            Source Tenchnology for Science!</b>
+    </div>
+
+    <!-- Core -->
+    <script src="./vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="./vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="./vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="./vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="./vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./vendor/prismjs/prism.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Neumorphism JS -->
+    <script src="./js/neumorphism.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Omics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Omics">
+    <meta name="author" content="benben-miao">
+    <!--fontawesome-->
+    <link type="text/css" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- Pixel CSS -->
+    <link type="text/css" href="./css/neumorphism.css" rel="stylesheet">
+    <link type="text/css" href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!---1.Navbar-->
+    <nav class="navbar navbar-expand navbar-transparent navbar-light shadow-soft navbar-theme-primary">
+        <div class="container position-relative">
+            <a href="./index.html">
+                <img class="logo" src="https://s1.ax1x.com/2020/07/12/U8wh9g.jpg" alt="pixel logo">
+            </a>
+            <div class="navbar-collapse collapse" id="navbar-default-primary">
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./omics.html" class="nav-link">Omics</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                            <i class="fas fa-angle-down nav-link-arrow"></i>
+                            <span class="nav-link-inner-text">BioCloud</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://usegalaxy.org/" target="_blank">Galaxy (International)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="http://210.38.139.148:8686/" target="_blank">Galaxy (GDOU Campus)</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="#"
+                                    class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                    aria-haspopup="true" aria-expanded="false">AiBio Cloud
+                                    <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="http://210.38.139.148:8888/" target="_blank" class="dropdown-item">Jupyter Lab (GDOU Campus)</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://210.38.139.148:8787/" target="_blank" class="dropdown-item">Rstudio (GDOU Campus)</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://210.38.139.148:3838/biocloud/" target="_blank"
+                                            class="dropdown-item">ShinyApps (GDOU Campus)</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://zhanglab.ccmb.med.umich.edu/" target="_blank" class="dropdown-item">Zhang Lab</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./book.html" class="nav-link">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./video.html" class="nav-link">Video</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                            <i class="fas fa-angle-down nav-link-arrow"></i>
+                            <span class="nav-link-inner-text">Dashboard</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="http://210.38.139.148:3000/" target="_blank">Prometheus/Grafana (GDOU Campus)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://210.38.139.148/zabbix/" target="_blank">Zabbix (GDOU Campus)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://210.38.139.148:8443" target="_blank">Dacker/Kubernetes/Dashboard (GDOU Campus)</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="fab fa-github"></span>
+                <a href="https://github.com/benben-miao" target="_blank" class="nav-link">Github</a>
+                <!-- Button Modal -->
+                <button type="button" class="btn btn-sm btn-block btn-primary" data-toggle="modal"
+                    data-target="#modal-notification">Notification
+                </button>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Modal Content -->
+    <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-primary">
+                <div class="modal-header">
+                    <p class="modal-title" id="modal-title-notification"><b>Introduction:</b></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="py-3 text-center">
+                        <iframe src="https://beautiful-code.netlify.app/dna-helix/dist/index.html"
+                            style="width: 100%;height: 300px;"></iframe>
+                        <h2 class="h4 my-3"><b>Open source project developed for bioinformatics and omics
+                                study.</b></h2>
+                        <p><b>DESCRIPTION:</b> Database and programs collection of bioinformatics and omics
+                            for scientific study! Open Source Tenchnology for Science!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-danger ml-auto"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal Content -->
+    <!---2.Profile-->
+    <div class="my-profile">
+        <!-- Profile Card -->
+        <div class="card bg-primary shadow-soft border-light mb-5 text-center">
+            <div class="profile-image shadow-inset border border-light bg-primary p-3 rounded-circle mt-n5 mx-auto">
+                <img src="https://s1.ax1x.com/2020/07/12/U8wh9g.jpg"
+                    class="card-img-top-fix shadow-soft p-3 border border-light rounded-circle" alt="Joseph Avatar">
+            </div>
+            <div class="card-body">
+                <h3 class="h5 mb-2">benben-miao</h3>
+                <span class="h6 font-weight-normal text-gray mb-3">Bioinformatics Analysis Engineer fo Scientific
+                    Study!</span>
+                <div class="row mt-5">
+                    <div class="col-2">
+                        <div
+                            class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                            <span class="fab fa-github"></span>
+                        </div>
+                        <h2 class="h5 mb-0">Github</h2>
+                        <span>benben-miao</span>
+                    </div>
+                    <div class="col-2">
+                        <div
+                            class="icon icon-shape icon-shape-xs icon-dribbble icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                            <span class="fab fa-gitlab"></span>
+                        </div>
+                        <h2 class="h5 mb-0">Gitlab</h2>
+                        <span>benben-miao</span>
+                    </div>
+                    <div class="col-2">
+                        <div
+                            class="icon icon-shape icon-shape-xs icon-behance icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                            <span class="fab fa-behance"></span>
+                        </div>
+                        <h2 class="h5 mb-0">Behance</h2>
+                        <span>benben-miao</span>
+                    </div>
+                    <div class="col-2">
+                        <div
+                            class="icon icon-shape icon-shape-xs icon-behance icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                            <span class="fab fa-weibo"></span>
+                        </div>
+                        <h2 class="h5 mb-0">Weibo</h2>
+                        <span>benben-miao</span>
+                    </div>
+                    <div class="col-2">
+                        <div
+                            class="icon icon-shape icon-shape-xs icon-behance icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                            <span class="fab fa-facebook"></span>
+                        </div>
+                        <h2 class="h5 mb-0">Facebook</h2>
+                        <span>benben-miao</span>
+                    </div>
+                    <div class="col-2">
+                        <div
+                            class="icon icon-shape icon-shape-xs icon-behance icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                            <span class="fab fa-microsoft"></span>
+                        </div>
+                        <h2 class="h5 mb-0">Microsoft</h2>
+                        <span>benben.miao</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Profile Card -->
+    </div>
+    <!---3.Toasts-->
+    <div class="my-toast row">
+        <div class="col-12 col-md-3">
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header text-dark">
+                    <span class="fab fa-github"></span>
+                    <strong class="mr-auto ml-2">Next Blog</strong>
+                    <small class="text-gray">11 mins ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    https://github.com/benben-miao/benben-miao.github.io
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header text-dark">
+                    <span class="fab fa-github"></span>
+                    <strong class="mr-auto ml-2">Dimension</strong>
+                    <small class="text-gray">11 mins ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Dimension: https://github.com/benben-miao/Dimension
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header text-dark">
+                    <span class="fab fa-github"></span>
+                    <strong class="mr-auto ml-2">Zea-mays</strong>
+                    <small class="text-gray">11 mins ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Zea-mays: https://github.com/benben-miao/zea-mays
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header text-dark">
+                    <span class="fab fa-github"></span>
+                    <strong class="mr-auto ml-2">File-tree</strong>
+                    <small class="text-gray">11 mins ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    File-tree: https://github.com/benben-miao/file-tree
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---4.Websites-->
+    <div class="websites">
+        <h2>Websites</h2>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGL51U.png" class="card-img-top rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">BioBlog</h3>
+                        <a href="https://benben-miao.github.io/" class="btn btn-primary btn-sm"
+                            target="_blank">https://benben-miao.github.io/</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGLoX4.png" class="card-img-top rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">Rhyme For U</h3>
+                        <a href="https://rhymeforu.github.io/" class="btn btn-primary btn-sm"
+                            target="_blank">https://rhymeforu.github.io/</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGL4pT.png" class="card-img-top rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body rhyme">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h3 class="h5 card-title mt-3">Rhyme</h3>
+                                <a href="#panel-3" class="btn btn-primary btn-sm">Learn More
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img style="height:80%;border-radius: 10px;" class="shadow-soft"
+                                    src="https://s1.ax1x.com/2020/07/13/UGXciq.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGLIcF.png" class="card-img-top rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">Dimention</h3>
+                        <a href="https://3dimension.netlify.app/" class="btn btn-primary btn-sm"
+                            target="_blank">https://3dimension.netlify.app/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <hr />
+    <!---5.Patent-->
+    <div class="my-cards">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGflAe.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">在线聚类分析平台</h3>
+                        <a href="http://210.38.139.148:3838/biocloud/cluster/" target="_blank"
+                            class="btn btn-primary btn-sm">校内可局域网访问（私有）</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfM7D.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">在线PCA和TSNE降维分析</h3>
+                        <a href="http://210.38.139.148:3838/biocloud/pca-tsne/" target="_blank"
+                            class="btn btn-primary btn-sm">校内可局域网访问（私有）</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfunK.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">鱼类多样性信息库</h3>
+                        <a href="#panel-3" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfe6x.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">生物信息数据库导航</h3>
+                        <a href="#panel-4" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfmX6.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">基因组染色体数据可视化</h3>
+                        <a href="#panel-5" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfZ11.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">Python调CLUMPP和distruct程序</h3>
+                        <a href="#panel-6" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfVpR.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">生物热图绘制在线Shiny系统</h3>
+                        <a href="#panel-7" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-primary border-light shadow-soft">
+                    <img src="https://s1.ax1x.com/2020/07/13/UGfAh9.jpg" class="card-img-top2 rounded-top"
+                        alt="Themesberg office">
+                    <div class="card-body">
+                        <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                        <h3 class="h5 card-title mt-3">一种鱼虾蟹类网渔具</h3>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---6.Frame-->
+    <div class="my-frame">
+        <div class="card bg-primary border-light shadow-soft">
+            <iframe src="https://beautiful-code.netlify.app/lina-cat/index.html" height="520px" width="100%"></iframe>
+            <div class="card-body">
+                <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                <h3 class="h5 card-title mt-3">Bioinformatics with Omics! </h3>
+                <p class="card-text">Genomics, Transcriptomics, Proteomics, Metabolomics, Epigenomics .etc.</p>
+                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <!---7.Footer-->
+    <div class="my-footer shadow-soft">
+        <div class="row ">
+            <div class="col-12 col-md-4">
+                <div
+                    class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                    <span class="fas fa-copyright"></span>
+                </div> Copyright: benben-miao
+            </div>
+            <div class="col-12 col-md-4">
+                <div
+                    class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                    <span class="fab fa-github"></span>
+                </div> Github: <a href="https://github.com/benben-miao">https://github.com/benben-miao</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <div
+                    class="icon icon-shape icon-shape-xs icon-facebook icon-shape-primary shadow-soft border border-light rounded-circle mb-2">
+                    <span class="fab fa-gitlab"></span>
+                </div> Gitlab: <a href="https://gitlab.com/benben-miao">https://gitlab.com/benben-miao</a>
+            </div>
+        </div>
+        <b>DESCRIPTION:</b> Database and programs collection of bioinformatics and omics for scientific study! <b>Open
+            Source Tenchnology for Science!</b>
+    </div>
+
+    <!-- Core -->
+    <script src="./vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="./vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="./vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="./vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="./vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./vendor/prismjs/prism.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Neumorphism JS -->
+    <script src="./js/neumorphism.js"></script>
+</body>
+
+</html>

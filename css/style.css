@@ -1,0 +1,124 @@
+.carou {
+    height: 720px;
+}
+#Carousel3 {
+    width: 80%;
+    margin: auto;
+    margin-top: 95px;
+}
+.my-cards {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+.my-accor {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+
+.my-vertabs {
+    margin: auto;
+    width: 98%;
+    height: auto;
+    margin-top: 95px;
+    margin-bottom: 20px;
+}
+.nav-item {
+    margin-top: 10px;
+}
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.badge {
+    margin-right: 0px;
+}
+.my-alert {
+    width: 98%;
+    margin: auto;
+}
+.my-toast {
+    width: 80%;
+    margin: auto;
+}
+
+.content {
+    height: auto;
+}
+.my-profile {
+    margin: auto;
+    margin-top: 135px;
+    width: 80%;
+    height: auto;
+}
+.my-timeline {
+    margin: auto;
+    margin-top: 80px;
+    width: 80%;
+    height: auto;
+}
+.navbar {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.my-frame {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+.my-footer {
+    width: 100%;
+    height: 100px;
+    background-color: #e6e7ee;
+    margin-top: 20px;
+    padding: 20px;
+}
+.iframe {
+    width: 100%;
+    height: 500px;
+}
+.server {
+    padding: 8px !important;
+    height: 56px;
+}
+.pdf {
+    width: 100%;
+    margin: auto;
+}
+.card-img-top2 {
+    width: 50%;
+    height: 240px;
+    margin: auto;
+    border-top-left-radius: calc(0.55rem - 0.0625rem);
+    border-top-right-radius: calc(0.55rem - 0.0625rem);
+}
+.card-img-top-fix {
+    width: 100%;
+    border-top-left-radius: calc(0.55rem - 0.0625rem);
+    border-top-right-radius: calc(0.55rem - 0.0625rem);
+}
+.hortabs {
+    width: 80%;
+    margin: auto;
+    margin-top: 95px;
+    height: 800px;
+    overflow-y: scroll;
+}
+.websites {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.rhyme {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
