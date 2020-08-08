@@ -123,11 +123,11 @@
     padding-bottom: 5px;
 }
 .nav-pills .nav-link {
-    padding: 5px;
+    padding: 5px !important;
     width: 100%;
-    text-align: left;
+    text-align: left !important;
 }
 .nav-fill .nav-item {
-    font-size: 0.8rem;
-    width: 300px;
+    font-size: 0.8rem !important;
+    width: 300px !important;
 }
